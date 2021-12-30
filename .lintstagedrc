@@ -1,0 +1,21 @@
+{
+  "*.css": [
+    "stylelint --fix",
+    "prettier --write",
+    "git add"
+  ],
+  "*.less": [
+    "stylelint --fix --syntax less",
+    "prettier --write",
+    "git add"
+  ],
+  "*.{js,jsx,md,json}": [
+    "prettier --write",
+    "git add"
+  ],
+  "*.{ts,tsx}": [
+    "prettier --parser=typescript --write",
+    "eslint --fix --cache",
+    "git add"
+  ]
+}
